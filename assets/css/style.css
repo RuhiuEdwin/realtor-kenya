@@ -356,6 +356,7 @@ a{
 .partner_details ul li,
 .cta_details ul li{
     list-style: none;
+    margin: 20px;
 }
 .numbers{
     display: flex;

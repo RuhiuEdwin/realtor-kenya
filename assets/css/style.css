@@ -382,6 +382,9 @@ a{
     .partner_info{
         float: right;
         text-align: right;
+    }.partner_details ul li,
+    .cta_details ul li{
+        width: 200px;
     }
 }
 .blog{

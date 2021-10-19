@@ -376,9 +376,6 @@ a{
     text-align: right;
 }
 @media screen and (min-width: 800px){
-    .numbers{
-        justify-content: space-evenly;
-    }
     .partner_info{
         float: right;
         text-align: right;

@@ -357,6 +357,7 @@ a{
 .cta_details ul li{
     list-style: none;
     margin: 20px;
+    padding: 10px;
 }
 .numbers{
     display: flex;

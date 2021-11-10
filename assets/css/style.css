@@ -365,6 +365,8 @@ a{
 .partner_details ul li,
 .cta_details ul li{
     list-style: none;
+    margin: 20px;
+    padding: 50px;
 }
 .numbers{
     display: flex;
@@ -383,12 +385,18 @@ a{
     text-align: right;
 }
 @media screen and (min-width: 800px){
+<<<<<<< HEAD
     .numbers{
         justify-content: space-around;
     }
+=======
+>>>>>>> bbb42cea9b3bd6041c903a8767cdc15d19cde038
     .partner_info{
         float: right;
         text-align: right;
+    }.partner_details ul li,
+    .cta_details ul li{
+        width: 200px;
     }
     .numbers li{
         margin:0 50px;

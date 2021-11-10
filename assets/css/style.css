@@ -21,6 +21,9 @@ body{
 .button a{
     color: var(--white);
 }
+.button:hover{
+    background-color: var(--blackish);
+}
 .navbar{
     height: 60px;
     display: flex;
@@ -30,8 +33,11 @@ body{
     width: 100vw;
 }
 .navbar_logo{
-    margin-left: 50px;
-    color: var(--black);
+    margin: 50px;
+    color: var(--offwhite);
+    font-family: 'montserrat';
+    font-size: 2rem;
+    text-align: center;
 }
 .navbar_menu{
     display: flex;
@@ -150,6 +156,9 @@ a{
 .btn a{
     color: white;
     font-family: 'arial rounded mt';
+}
+.btn:hover{
+    background: var(--black);
 }
 @media screen and (max-width: 768px) {
     body.active{
@@ -339,8 +348,8 @@ a{
 }
 .cta,
 .partner{
-    background: linear-gradient(to right, rgba(0,0,0,0.4), rgba(0,0,0,0.1)),
-    url(./assets/images/45.jpg);
+    background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+    url(/assets/images/45.jpg);
     background-position: center;
     background-size: cover;
     display: flex;
@@ -375,11 +384,15 @@ a{
 }
 @media screen and (min-width: 800px){
     .numbers{
-        justify-content: space-evenly;
+        justify-content: space-around;
     }
     .partner_info{
         float: right;
         text-align: right;
+    }
+    .numbers li{
+        margin:0 50px;
+        width: 250px;
     }
 }
 .blog{
@@ -437,6 +450,9 @@ a{
     }
     .sidebar .title{
         display: none;
+    }
+    .reverse{
+        order: -1;
     }
 }
 .contact{
@@ -502,6 +518,9 @@ a{
     }
     .buttn{
         width: 10vw;
+    }
+    .buttn:hover{
+        background: var(--black);
     }
     .contact_info{
         margin: 0 50px;

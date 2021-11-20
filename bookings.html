@@ -9,15 +9,20 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./assets/css/style.css">
         <link rel="stylesheet" href="./assets/css/global.css">
+        <script type="text/javascript">
+            (function() {
+            emailjs.init("user_07AZnq5vl7duts3b99pbU");
+            })();
+        </script>
         <link rel="shortcut icon" type="image/jpg" href="./assets/images/logo.png">
-        <title>REALTOR</title>
+        <title>UrbanRidge Properties</title>
     </head>
     <body>
         <nav class="navbar">
             <a href="index.html" class="navbar_logo">
-                REALTOR<br>KENYA
+                <img src="./assets/images/logo.png" alt="">
             </a>
-            <p>info@realtorkenya.co.ke</p>
+            <p>info@urbanpropertieslimited.co.ke</p>
             <div class="navbar_toggle" id="mobile-menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -25,9 +30,10 @@
             </div>
             <ul>
                 <div class="navbar_menu">
-                    <li><a href="listings.html" class="navbar_link active">our listings</a></li>
-                    <li><a href="blog.html" class="navbar_link">client resources</a></li>
-                    <li><a href="partner.html" class="navbar_link">enlist with us</a></li>
+                    <li><a href="rent.html" class="navbar_link active">RENT</a></li>
+                    <li><a href="buy.html" class="navbar_link active">BUY</a></li>
+                    <li><a href="partner.html" class="navbar_link">ENLIST WITH US</a></li>
+                    <li><a href="blog.html" class="navbar_link">CLIENT RESOURCES</a></li>
                 </div>
             </ul>
         </nav>
@@ -42,41 +48,42 @@
             <h1 class="title">FILL IN THIS FORM</h1>
             <div class="contact_wrapper">
                 <div class="contact_card">
-                    <form class="contact_form">
+                    <form class="contact_form" id="form">
                         <div class="name">
-                            <label class="form_label">enter your name</label>
-                            <input type="text" name="name" placeholder="jane doe">
+                            <label class="form_label" for="from_name">enter your name</label>
+                            <input type="text" id="from_name" name="from_name" placeholder="jane doe">
                         </div>
                         <div class="emailaddress">
-                            <label class="form_label">enter email address</label>
-                            <input type="text" name="email" placeholder="example@example.com">
+                            <label class="form_label" for="email_address">enter email address</label>
+                            <input type="text" id="email_address" name="email_address" placeholder="example@example.com">
                         </div>
                         <div class="phone">
-                            <label class="form_label">enter your phonenumber</label>
-                            <input type="text" name="phone" placeholder="0700000000">
+                            <label class="form_label" for="phone_number">enter your phonenumber</label>
+                            <input type="text" id="phone_number" name="phone_number" placeholder="0700000000">
                         </div>
                         <div class="property_type">
-                            <label class="form_label">which property would you like to view?</label>
+                            <label class="form_label" for="property_name">which property would you like to view?</label>
                             <select name="property_type" class="option" data-placeholder="property type" tabindex="1">
                                 <option>select property</option>
+                                <option value="godsgrace" id="gods_grace" name="gods_grace" value="gods_grace">God's Grace Apartments</option>
+                                <option value="federalway" id="federal_way" name="federal_way" value="federal_way">Federal Way Flats</option>
+                                <option value="muthara" id="muthara_residential" name="muthara_residential" value="muthara_residential">Muthara Residential Plot</option>
                             </select>
                         </div>
                         <div class="viewdate">
-                            <label class="form_label">when would you like to view the property?</label>
-                            <input type="date" name="viewdate" placeholder="date">
+                            <label class="form_label" for="view_date">when would you like to view the property?</label>
+                            <input id="view_date" name="view_date" type="date"  placeholder="date">
                         </div>
-                        <input type="submit" class="buttn" name="submit" value="submit"/>
+                        <input id="button" type="submit" class="buttn" name="submit" value="submit"/>
                     </form>
                     <div class="contact_info">
                         <div class="e&p">
-                            <p>email: info@realtorkenya.co.ke</p>
-                            <p>phone: 0712345678</p>
+                            <p>email: info@urbanpropertieslimited.co.ke</p>
+                            <p>phone: 0706-611-061</p>
                         </div>
                         <div class="address">
                             <h4>physical address:</h4>
-                            <p>feruzi towers</p>
-                            <p>opp. quickmark kiambu road</p>
-                            <p>5th fr. No. 504</p>
+                            <p>Muthaiga, Nairobi</p>
                         </div>
                     </div>
                 </div>
@@ -90,11 +97,10 @@
                 <div class="footer-container">
                     <div class="footer_info">
                         <div class="footer_details">
-                            <h2>REALTOR KENYA</h2>
+                            <h2>UrbanRidge Properties</h2>
                             <p>karibu nyumbani</p>
-                            <p>kiambu road</p>
-                            <p>opp. fourways junction</p>
-                            <p>info@realtorkenya.co.ke</p>
+                            <p>Muthaiga, Nairobi</p>
+                            <p>info@urbanpropertieslimited.co.ke</p>
                             <p>+254-712-345-6789</p>
                         </div>
                     </div>
@@ -102,7 +108,8 @@
                         <h2>useful links</h2>
                         <ul>
                             <li><a href="blog.html">blog posts</a></li>
-                            <li><a href="listings.html">our listings</a></li>
+                            <li><a href="rent.html">rent</a></li>
+                            <li><a href="buy.html">buy</a></li>
                             <li><a href="partner.html">enlist with us</a></li>
                             <li><a href="index.html#contact">make an enquiry</a></li>
                         </ul>
@@ -122,7 +129,7 @@
                     </div>
                 </div>
                 <div class="copyright">
-                    <p>copyright |icodekenya|</p>
+                    <p>copyright |bella agency|</p>
                 </div>
             </div>
         </div>
